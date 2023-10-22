@@ -1,12 +1,10 @@
 //your JS code here. If required.
-const button =document.getElementById("enterBtn");
-const para =document.getElementById("status");
-let h1Element = document.createEvent("h1");
-h1Element.innerText =“Entered Metaverse”;
-h1Element.id="status";
-let bodyTag = document.querySelector(".container");
-button.addEventListener("click",()=>{
-	bodyTag.insertBefore(h1Element,para);
-	para.remove();
-	
+document.addEventListener("DOMContentLoaded", function () {
+    const statusElement = document.getElementById("status");
+    const enterButton = document.getElementById("enterBtn");
+
+    enterButton.addEventListener("click", function () {
+        statusElement.innerHTML = '<hi>Entered Metaverse</hi>';
+    });
+});
 });
